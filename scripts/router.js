@@ -1,27 +1,27 @@
 import ImageView from './views/index';
 
-import {ImagesCollection} from './models/image';
+import {ImageCollection} from './models/image';
 
 
 var Router = Backbone.Router.extend({
   routes: {
     // '': 'index', will be user login screen
-    '': 'imageBoard' //property name will be changed once user login screen added
+    '': 'index' //property name will be changed once user login screen added
   },
 
   initialize: function() {
-    this.listenTo(this.images, 'add', function() {
-      this.navigate('messages', {trigger: true});
-    });
-    this.images = new ImagesCollection();
+    // // this.listenTo(this.images, 'add', function() {
+    //   this.navigate('index', {trigger: true});
+    // });
+    this.images = new ImageCollection();
 
   },
 
-  // index: function(){
-  //   ADD DURING HARD MODE FOR USER LOGIN
-  // },
+  /*
+   * Route Handlers
+   */
 
-  imageBoard: function() {
+  index: function() {
     var imageView = new ImageView({
       collection: this.images
     });

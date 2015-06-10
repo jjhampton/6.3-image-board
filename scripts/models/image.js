@@ -3,7 +3,9 @@ var Image = Backbone.Model.extend({
   //Try removing function from defaults if this doesn't work -
   defaults: function() {
     return {
-      content: ''
+      caption: '',
+      url: '',
+      created_at: new Date()
     };
   }
 });
@@ -13,4 +15,4 @@ var ImageCollection = Backbone.Collection.extend({
   url: 'http://tiny-lasagna-server.herokuapp.com/collections/images'
 });
 
-export default {Image, ImageCollection};
+export default {Image, ImageCollection };
