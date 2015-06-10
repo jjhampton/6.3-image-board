@@ -7,6 +7,6 @@ import router from './router';
 
   $(document).ready(function(){
     Backbone.history.start();
-    $('body').prepend(JST.form());
+    // $('.app-container').prepend(JST.form());
   });
 })();
