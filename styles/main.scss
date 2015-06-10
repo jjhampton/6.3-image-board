@@ -12,10 +12,28 @@ $light-gray: #ddd;
 $very-light-gray: #fafafa;
 
 $base-font-color: $dark-gray;
-$base-background-color: $very-light-gray;
+$base-background-color: $light-gray;
 
 body {
   font-family: $base-font-family;
   background-color: $base-background-color;
   color: $base-font-color;
+}
+
+.form-menu-bar {
+  background-color: $blue;
+}
+
+.form-dropdown-button {
+  color: $dark-gray;
+}
+
+.form-add-image {
+  height: 300px;
+  background-color: #fff;
+}
+
+.image-list {
+  width: 800px;
+  background-color: $medium-gray;
 }
