@@ -1,0 +1,22 @@
+<div class="menu-bar">
+  <i class="fa fa-plus-circle form-dropdown-button"></i>
+</div>
+
+<form class="add-image-form">
+    <input class="image-input-url" type="text" placeholder="Image URL">
+    <input class="image-input-caption" type="text" placeholder="Image Caption">
+    <input type="button" value="Cancel">
+    <input type="submit" value="Add Image">
+</form>
+
+<ul class="image-list">
+  {{#each this}}
+    <li class="image-container">
+      <figure>
+        <img src="{{url}}">
+        <figcaption>{{caption}}</figcaption>
+        <figcaption>Posted on {{created_at}}</figcaption>
+      <figure>
+    </li>
+  {{/each}}
+</ul>
