@@ -27,6 +27,7 @@ var Router = Backbone.Router.extend({
     });
     $('.app-container').html(imageView.el);
     this.images.fetch();
+
   }
 });
 
